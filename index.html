@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/js_bc-52_BC-52-PROJECT-2/assets/modal-popup-char-b3731b29.js"></script>
+    <link rel="stylesheet" href="/js_bc-52_BC-52-PROJECT-2/assets/modal-popup-char-91fcf148.css">
+    <link rel="stylesheet" href="/js_bc-52_BC-52-PROJECT-2/assets/styles-9d120160.css">
+  </head>
+
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a class="btn-green header-btn" href="characters.html">Characters</a>
+      <a class="btn-dark-bg header-btn" href="episodes.html">Episodes</a>
+    </nav>
+    <form class="header-form" id="main-header-form">
+      <input
+        class="btn-dark-bg header-input"
+        id="hidden-input"
+        type="text"
+        placeholder="Search"
+      />
+      <button
+        class="header-search-btn header-hero-btn"
+        id="main-header-search"
+        type="submit"
+      >
+        <svg class="header-icon">
+          <use href="/js_bc-52_BC-52-PROJECT-2/assets/symbol-defs-867cd7f1.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</header>
+
+    <main>
+      <section class="hero" id="hero">
+  <div class="container hero-container">
+    <h1 class="visually-hidden">Rick and Morty</h1>
+    <div class="hero-images">
+      <picture class="hero-img">
+        <source
+          srcset="/js_bc-52_BC-52-PROJECT-2/assets/hero-hero-desktop@1x-b68d44aa.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/hero-hero-desktop@2x-ff222a45.png 2x"
+          media="(min-width: 1440px)" />
+        <source
+          srcset="/js_bc-52_BC-52-PROJECT-2/assets/hero-hero-desktop@1x-b68d44aa.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/hero-hero-desktop@2x-ff222a45.png 2x"
+          media="(min-width: 768px)" />
+        <source
+          srcset="/js_bc-52_BC-52-PROJECT-2/assets/hero-hero-mobile@1x-60a53736.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/hero-hero-mobile@2x-65ade732.png 2x"
+          media="(max-width: 767px)" />
+        <img src="/js_bc-52_BC-52-PROJECT-2/assets/hero-hero-desktop@1x-b68d44aa.png" alt="cosmo-car"
+      /></picture>
+      <picture class="hero-logo">
+        <source
+          srcset="/js_bc-52_BC-52-PROJECT-2/assets/logo-hero-desktop@1x-85da12ca.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/logo-hero-desktop@2x-878a8776.png 2x"
+          media="(min-width: 1440px)" />
+        <source
+          srcset="/js_bc-52_BC-52-PROJECT-2/assets/logo-hero-desktop@1x-85da12ca.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/logo-hero-desktop@2x-878a8776.png 2x"
+          media="(min-width: 768px)" />
+        <source
+          srcset="/js_bc-52_BC-52-PROJECT-2/assets/logo-hero-mobile@1x-e10bba37.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/logo-hero-mobile@2x-5bf803ad.png 2x"
+          media="(max-width: 767px)" />
+        <img src="/js_bc-52_BC-52-PROJECT-2/assets/logo-hero-desktop@1x-85da12ca.png" alt="logo"
+      /></picture>
+    </div>
+    <p class="hero-text">
+      If you're a fan of Rick and Morty, you don't want to miss out on our app!
+      Start exploring the endless possibilities of Rick and Morty!
+    </p>
+    <button class="hero-btn hero-btn-down" type="button">
+      <svg class="hero-icon">
+        <use href="/js_bc-52_BC-52-PROJECT-2/assets/symbol-defs-867cd7f1.svg#icon-Vector-5"></use>
+      </svg>
+    </button>
+    <button class="hero-btn hero-btn-rotate is-hidden" type="button">
+      <svg class="hero-icon">
+        <use href="/js_bc-52_BC-52-PROJECT-2/assets/symbol-defs-867cd7f1.svg#icon-Vector-5"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+      <section class="tags" id="tags">
+  <div class="container tags-container">
+    <div class="tags-wrapper">
+      <ul class="tags-list">
+        <li class="tags-item black-white first-listed">
+          <p class="tags-text bigger-text">the adventures</p>
+        </li>
+
+        <li class="tags-item green-black second-listed">
+          <p class="tags-text bigger-text">Justin Roiland</p>
+        </li>
+
+        <li class="tags-item green-black third-listed">
+          <p class="tags-text bigger-text">Amazing!</p>
+        </li>
+        <li class="tags-item black-white fourth-listed">
+          <p class="tags-text bigger-text">Rick and Morty</p>
+        </li>
+
+        <li class="tags-item black-yellow fifth-listed">
+          <p class="tags-text smaller-text">follows</p>
+        </li>
+
+        <li class="tags-item green-black sixth-listed">
+          <p class="tags-text smaller-text">Whoa</p>
+        </li>
+      </ul>
+
+      <div class="tags-item green-black first-abs">
+        <p class="tags-text smaller-text">Animated</p>
+      </div>
+
+      <div class="tags-absolute-item tags-item yellow-black second-abs">
+        <p class="tags-text bigger-text">Sitcom</p>
+      </div>
+      <div class="tags-absolute-item tags-item black-green third-abs">
+        <p class="tags-text bigger-text">superpower</p>
+      </div>
+      <div class="tags-item yellow-black fourth-abs">
+        <p class="tags-text smaller-text">creative</p>
+      </div>
+      <div class="tags-absolute-item tags-item yellow-black fifth-abs">
+        <p class="tags-text bigger-text">comics</p>
+      </div>
+      <div class="tags-absolute-item tags-item yellow-black sixth-abs">
+        <p class="tags-text bigger-text">characters</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="hero-gallery is-hidden hidden-gallery">
+  <div class="container gallery-container">
+    <ul class="dropdown-filter">
+      <li class="input-wrapper">
+        <p class="text-about">Name</p>
+        <form class="gallery-form">
+          <input
+            placeholder="Enter name"
+            class="characters-search input-green"
+            type="text"
+          /><button type="submit" class="gallery-search-btn">
+            <svg class="gallery-search-icon">
+              <use href="/js_bc-52_BC-52-PROJECT-2/assets/symbol-defs-867cd7f1.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+      </li>
+      <li class="dropdown-item">
+        <p class="text-about">Status</p>
+        <div class="dropdown-tag" id="status-item">
+          <button
+            class="dropdown-btn input-white"
+            name="status"
+            id="status-select"
+            data-path="status"
+          >
+            All<svg class="drop-down-icon">
+              <use href="/js_bc-52_BC-52-PROJECT-2/assets/symbol-defs-867cd7f1.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+          <ul
+            class="dropdown-list"
+            data-target="status"
+            id="status-dropdown-select"
+          >
+            <li class="drop-down-point" data-value="all">All</li>
+            <li class="drop-down-point" data-value="alive">Alive</li>
+            <li class="drop-down-point" data-value="dead">Dead</li>
+            <li class="drop-down-point" data-value="unknow">Unknow</li>
+          </ul>
+        </div>
+      </li>
+      <li class="dropdown-item">
+        <p class="text-about">Species</p>
+        <div class="dropdown-tag" id="species-item">
+          <button
+            class="dropdown-btn input-white"
+            name="species"
+            id="species-select"
+            data-path="species"
+          >
+            All<svg class="drop-down-icon">
+              <use href="/js_bc-52_BC-52-PROJECT-2/assets/symbol-defs-867cd7f1.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+          <ul
+            class="dropdown-list"
+            data-target="species"
+            id="species-dropdown-select"
+          >
+            <li class="drop-down-point" data-value="all">All</li>
+            <li class="drop-down-point" data-value="human">Human</li>
+            <li class="drop-down-point" data-value="alien">Alien</li>
+            <li class="drop-down-point" data-value="humanoid">Humanoid</li>
+            <li class="drop-down-point" data-value="animal">Animal</li>
+            <li class="drop-down-point" data-value="robot">Robot</li>
+            <li class="drop-down-point" data-value="cronenberg">Cronenberg</li>
+            <li class="drop-down-point" data-value="disease">Disease</li>
+            <li class="drop-down-point" data-value="poopybutthole">
+              Poopybutthole
+            </li>
+            <li class="drop-down-point" data-value="mythological">
+              Mythological creature
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="dropdown-item">
+        <p class="text-about">Type</p>
+        <div class="dropdown-tag" id="type-item">
+          <button
+            class="dropdown-btn input-white"
+            name="type"
+            id="type-select"
+            data-path="type"
+          >
+            All<svg class="drop-down-icon">
+              <use href="/js_bc-52_BC-52-PROJECT-2/assets/symbol-defs-867cd7f1.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+          <ul
+            class="dropdown-list"
+            data-target="type"
+            id="type-dropdown-select"
+          >
+            <li class="drop-down-point" data-value="all">All</li>
+          </ul>
+        </div>
+      </li>
+      <li class="dropdown-item">
+        <p class="text-about">Gender</p>
+        <div class="dropdown-tag" id="gender-item">
+          <button
+            class="dropdown-btn input-white"
+            name="gender"
+            id="gender-select"
+            data-path="gender"
+          >
+            All<svg class="drop-down-icon">
+              <use href="/js_bc-52_BC-52-PROJECT-2/assets/symbol-defs-867cd7f1.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+          <ul
+            class="dropdown-list"
+            data-target="gender"
+            id="gender-dropdown-select"
+          >
+            <li class="drop-down-point" data-value="all">All</li>
+            <li class="drop-down-point" data-value="male">Male</li>
+            <li class="drop-down-point" data-value="female">Female</li>
+            <li class="drop-down-point" data-value="genderless">Genderless</li>
+            <li class="drop-down-point" data-value="unknown">Unknown</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="gallery gallery-cards hero-gallery"></ul>
+    <button class="load-more-btn btn-green" type="button">Load More</button>
+  </div>
+  <div class="oops-list is-hidden">
+    <picture>
+      <source
+        srcset="/js_bc-52_BC-52-PROJECT-2/assets/oops-desktop@1x-113b6677.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/oops-desktop@2x-c2c028a9.png 2x"
+        media="(min-width: 1440px)" />
+      <source
+        srcset="/js_bc-52_BC-52-PROJECT-2/assets/oops-desktop@1x-113b6677.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/oops-desktop@2x-c2c028a9.png 2x"
+        media="(min-width: 768px)" />
+      <source
+        srcset="/js_bc-52_BC-52-PROJECT-2/assets/oops-mobile@1x-59104167.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/oops-mobile@2x-e16382dd.png 2x"
+        media="(max-width: 767px)" />
+      <img class="oops-img" src="/js_bc-52_BC-52-PROJECT-2/assets/oops-desktop@1x-113b6677.png" alt="oops"
+    /></picture>
+    <p class="oops-text">Oops! Try looking for something else...</p>
+  </div>
+</section>
+
+      <section class="main-characters section">
+    <div class="main-container container">
+        <div>
+            <h2 class="main-title">
+                <span class="first-part-title">Main</span> characters
+            </h2>
+        </div>
+        <div class="main-characters-wrapper">
+            <ul class="main-img-hidden-list">
+                <li class="main-characters-img">
+                    <picture>
+                        <source srcset="/js_bc-52_BC-52-PROJECT-2/assets/rick-desktop@1x-min-f24e93a4.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/rick-desktop@2x-min-eb1e5253.png 2x"
+
+                            media="(min-width: 1440px)">
+                        <source srcset="/js_bc-52_BC-52-PROJECT-2/assets/rick-tablet@1x-min-bd0bc747.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/rick-tablet@2x-min-0bc52422.png 2x"
+                            media="(min-width: 768px)">
+                        <source srcset="/js_bc-52_BC-52-PROJECT-2/assets/rick-mobile@1x-min-e99c3048.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/rick-mobile@2x-min-4e6526fa.png 2x"
+                            media="(min-width: 375px)">
+
+                        <img id=default-img class="rick-img img-component" src="/js_bc-52_BC-52-PROJECT-2/assets/rick-desktop@1x-min-f24e93a4.png"
+                            alt="Rick Sanchez hero">
+                    </picture>
+                </li>
+
+                <li class="main-characters-img">
+                    <picture>
+                        <source srcset="/js_bc-52_BC-52-PROJECT-2/assets/morty-desktop@1x-min-f4b5a5c9.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/morty-desktop@2x-min-4875a61c.png 2x"
+
+
+                            media="(min-width: 1440px)">
+
+                        <source srcset="/js_bc-52_BC-52-PROJECT-2/assets/morty-tablet@1x-min-aadf29c3.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/morty-tablet@2x-min-68063696.png 2x"
+                            media="(min-width: 768px)">
+                        <source srcset="/js_bc-52_BC-52-PROJECT-2/assets/morty-mobile@1x-min-2382b3bd.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/morty-mobile@2x-min-30a3fbea.png 2x"
+                            media="(min-width: 375px)">
+
+                        <img id="morty-img" class="morty-img img-component img-hidden"
+                            src="/js_bc-52_BC-52-PROJECT-2/assets/morty-desktop@1x-min-f4b5a5c9.png" alt="Morty Smith hero">
+                    </picture>
+                </li>
+
+
+                <li class="main-characters-img">
+                    <picture>
+                        <source srcset="/js_bc-52_BC-52-PROJECT-2/assets/summer-desktop@1x-min-7586b43f.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/summer-desktop@2x-min-c757c714.png 2x"
+
+
+                            media="(min-width: 1440px)">
+
+                        <source srcset="/js_bc-52_BC-52-PROJECT-2/assets/summer-tablet@1x-min-66cef195.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/summer-tablet@2x-min-0bb45bb0.png 2x"
+                            media="(min-width: 768px)">
+                        <source srcset="/js_bc-52_BC-52-PROJECT-2/assets/summer-mobile@1x-min-d49be742.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/summer-mobile@2x-min-5e0c3df8.png 2x"
+                            media="(min-width: 375px)">
+
+                        <img id="summer-img" class="summer-img img-component img-hidden"
+                            src="/js_bc-52_BC-52-PROJECT-2/assets/summer-desktop@1x-min-7586b43f.png" alt="Summer Smith hero">
+                    </picture>
+                </li>
+            </ul>
+
+            <ul class="main-characters-list">
+                <li data-img="default-img" class="main-characters-item main-link">
+                    <h3 class="main-subtitle rick-subtitle">Rick Sanchez</h3>
+                    <p class="main-text">Rick Sanchez is a brilliant but deeply troubled scientist and one of
+                        the
+                        main
+                        characters in the animated TV show Rick
+                        and Morty. He often acts selfishly and impulsively, using his scientific knowledge and
+                        gadgets
+                        to
+                        manipulate those
+                        around him.
+                    </p>
+                </li>
+                <li data-img="morty-img" class="main-characters-item main-link">
+                    <h3 class="main-subtitle">Morty Smith</h3>
+                    <p class="main-text">Morty Smith is the other main character in the animated TV show Rick
+                        and
+                        Morty,
+                        and
+                        Rick's grandson. He is a timid and
+                        anxious teenager who is often reluctant to accompany Rick on his wild adventures, but is
+                        forced
+                        to
+                        do so anyway. Despite
+                        his fears, Morty is often able to show surprising courage and resourcefulness, and is a
+                        loyal
+                        and
+                        loving grandson to
+                        Rick.</p>
+                </li>
+                <li data-img="summer-img" class="main-characters-item main-link">
+                    <h3 class="main-subtitle">Summer Smith</h3>
+                    <p class="main-text">Summer Smith is Morty's older sister and one of the main characters in
+                        Rick
+                        and
+                        Morty. Initially portrayed as a typical
+                        teenager, she develops into a more complex and independent character, who is
+                        intelligent,
+                        resourceful, and fiercely
+                        loyal to her family.
+                    </p>
+
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</section>
+      <section class="section-slider" id="slider">
+  <h3 class="slider-name">
+    Ready to <span class="slide-name-span">explore</span> the crazy world of
+    Rick and Morty?
+  </h3>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@1x-min-d7c1f86a.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@2x-min-f752375f.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@1x-min-d7c1f86a.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@2x-min-f752375f.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-mobile@1x-min-67bb98d0.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-mobile@2x-min-c2398c1c.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@1x-min-d7c1f86a.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@1x-min-2c3df671.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@2x-min-1e9b959a.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@1x-min-2c3df671.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@2x-min-1e9b959a.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-mobile@1x-min-86213822.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-mobile@2x-min-6f38acb4.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@1x-min-2c3df671.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@1x-min-5dd67c81.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@2x-min-40534614.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@1x-min-5dd67c81.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@2x-min-40534614.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-mobile@1x-min-f2fe125f.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-mobile@2x-min-441b934a.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@1x-min-5dd67c81.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@1x-min-1cc98d35.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@2x-min-50d45812.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@1x-min-1cc98d35.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@2x-min-50d45812.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-mobile@1x-min-6e01ff4c.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-mobile@2x-min-967fe92c.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@1x-min-1cc98d35.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@1x-min-37ff0f5c.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@2x-min-fff93519.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@1x-min-37ff0f5c.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@2x-min-fff93519.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-mobile@1x-min-4814ab3f.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-mobile@2x-min-ae5302c3.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@1x-min-37ff0f5c.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@1x-min-d7c1f86a.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@2x-min-f752375f.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@1x-min-d7c1f86a.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@2x-min-f752375f.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-mobile@1x-min-67bb98d0.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-mobile@2x-min-c2398c1c.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-1-slider-tablet-desktop@1x-min-d7c1f86a.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@1x-min-2c3df671.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@2x-min-1e9b959a.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@1x-min-2c3df671.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@2x-min-1e9b959a.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-mobile@1x-min-86213822.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-mobile@2x-min-6f38acb4.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-2-slider-tablet-desktop@1x-min-2c3df671.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@1x-min-5dd67c81.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@2x-min-40534614.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@1x-min-5dd67c81.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@2x-min-40534614.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-mobile@1x-min-f2fe125f.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-mobile@2x-min-441b934a.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-3-slider-tablet-desktop@1x-min-5dd67c81.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@1x-min-1cc98d35.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@2x-min-50d45812.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@1x-min-1cc98d35.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@2x-min-50d45812.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-mobile@1x-min-6e01ff4c.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-mobile@2x-min-967fe92c.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-4-slider-tablet-desktop@1x-min-1cc98d35.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@1x-min-37ff0f5c.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@2x-min-fff93519.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@1x-min-37ff0f5c.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@2x-min-fff93519.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-mobile@1x-min-4814ab3f.png 1x, /js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-mobile@2x-min-ae5302c3.png 2x"
+            media="(min-width: 375px)"
+          />
+
+          <img
+            class="slider-img"
+            src="/js_bc-52_BC-52-PROJECT-2/assets/episodes-5-slider-tablet-desktop@1x-min-37ff0f5c.png"
+            alt="episodes"
+            width="278"
+            height="319"
+          />
+        </picture>
+      </div>
+
+      <!-- If we need scrollbar -->
+
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <a class="slider-btn" href="episodes.html">Episodes</a>
+  </div>
+</section>
+
+      
+    </main>
+    <footer id="footer">
+  <div class="container footer footer-container">
+    <div class="footer-logo">
+      <a href="#home" class="link" target="_blank">
+        <img
+          src="/js_bc-52_BC-52-PROJECT-2/assets/footer-img-2dafb5ab.svg"
+          class="rick-morty"
+          alt="Rick and Morty Logo"
+        />
+        <p class="rick">Rick and</p>
+        <p class="morty">Morty</p>
+      </a>
+    </div>
+    <div class="footer-navigation">
+      <div class="footer-sections">
+        <ul class="list">
+          <li class="item">
+            <a href="characters.html" class="link">Characters</a>
+          </li>
+          <li class="item">
+            <a href="episodes.html" class="link">Episodes</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <ul class="list">
+          <li class="item">
+            <a href="404.html" class="link" target="_blank">
+              <svg class="footer-icon">
+                <use href="/js_bc-52_BC-52-PROJECT-2/assets/footer-1440b792.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="404.html" class="link" target="_blank">
+              <svg class="footer-icon twitter-home">
+                <use href="/js_bc-52_BC-52-PROJECT-2/assets/footer-1440b792.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="404.html" class="link" target="_blank">
+              <svg class="footer-icon">
+                <use href="/js_bc-52_BC-52-PROJECT-2/assets/footer-1440b792.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="privacy-policy">Privacy Policy Public Offering Agreement</p>
+</footer>
+
+    <div class="backdrop-popchar is-hidden">
+  <div class="modal-popchar">
+    <button type="button" class="popchar-close-btn close-modal-js">
+      <svg class="icon-close">
+        <use href="/js_bc-52_BC-52-PROJECT-2/assets/icon-close-2f8e0e00.svg#icon-x"></use>
+      </svg>
+    </button>
+    <img
+      class="heroes-episode-img"
+      src="placeholder.jpg"
+      alt="heroes of episode"
+    />
+
+    <ul class="status-list">
+      <li class="status-list-top">
+        <div class="status-item">
+          <span class="status-key">Status:</span>
+          <span class="status-value"></span>
+        </div>
+        <div class="status-item">
+          <span class="status-key">Species:</span>
+          <span class="status-value"></span>
+        </div>
+        <div class="status-item">
+          <span class="status-key">Gender:</span>
+          <span class="status-value"></span>
+        </div>
+        <div class="status-item">
+          <span class="status-key">Origin:</span>
+          <span class="status-value"></span>
+        </div>
+      </li>
+      <li class="status-list-buttom">
+        <div class="status-item">
+          <span class="status-key">Location:</span>
+          <span class="status-value"></span>
+        </div>
+        <div class="status-item episod-item">
+          <span class="status-key">Episodes:</span>
+          <span class="status-value"></span>
+        </div>
+        <div class="status-item">
+          <span class="status-key">Type:</span>
+          <span class="status-value"></span>
+        </div>
+      </li>
+    </ul>
+
+    <h2 class="modal-title">Episodes</h2>
+    <ul class="popchar-episodes-list"></ul>
+  </div>
+</div>
+
+    <div class="section-pop-epis is-hidden">
+  <div class="container-pop-epis">
+    <button class="close-pop-epis-btn" data-pop-epis-close type="button">
+      <svg class="close-pop-icon" width="10" height="10">
+        <use href="/js_bc-52_BC-52-PROJECT-2/assets/symbol-defs-867cd7f1.svg#icon-pop-epis-modal-close"></use>
+      </svg>
+    </button>
+
+    <div class="pop-epis-block">
+      <h2 class="pop-epis-pilot-title">Pilot</h2>
+      <p class="pop-epis-pilot-subskr">Id <span class="pop-epis-id">1</span></p>
+      <p class="pop-epis-pilot-subskr">
+        Air date <span class="pop-epis-date">December 2, 2013</span>
+      </p>
+
+      <h2 class="pop-epis-pilot-title">Characters</h2>
+      <p class="pop-epis-tablet-subtitle">Major Characters</p>
+      <div class="pop-epis-hero">
+      </div>
+    </div>
+  </div>
+</div>
+    
+  </body>
+</html>
